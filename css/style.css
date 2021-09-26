@@ -1,0 +1,1037 @@
+body {
+  color: #000000;
+  font-family: "Padauk", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100px;
+  max-width: 1920px;
+  margin: 0 150px;
+}
+
+.bonum_logo {
+  background: center/contain no-repeat url(../img/logo_bonum_0.svg);
+  height: 20px;
+  width: 65px;
+  z-index: 1;
+}
+
+.brand_name {
+  background: center/contain no-repeat url(../img/virna_logo_1.svg);
+  height: 16px;
+  width: 120px;
+  z-index: 1;
+}
+
+main {
+  position: absolute;
+  top: 0px;
+  max-width: 100%;
+}
+
+.cover {
+  max-width: 1920px;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.cover_img {
+  max-width: 100%;
+}
+
+.sidebar_right {
+  background: #FFFFFF;
+  width: 325px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar_right span {
+  margin: 15px 0;
+}
+
+.sidebar_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 855px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.open_menu {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.headline {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 200px 0;
+}
+
+.headline_title {
+  font-size: 72px;
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.text_shadow {
+  text-shadow: 3px 3px 5px #909090;
+}
+
+.headline_subtitle {
+  width: 80px;
+  text-align: right;
+  margin: 0 -20px;
+}
+
+.horizontal {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.siderbar_menu_footer {
+  width: 300px;
+  height: 20px;
+  margin: 15px 0 40px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu_button-container {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 75px;
+  left: 120px;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu_button-container:hover {
+  background: #bda091;
+}
+
+.menu_button-container.btn_open {
+  background: transparent;
+}
+
+.menuBtn {
+  width: 20px;
+  height: 1px;
+  background: #000000;
+  border: none;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.menuBtn:before,
+.menuBtn:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #000000;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.menuBtn:before {
+  -webkit-transform: translate(-10px, -6px);
+          transform: translate(-10px, -6px);
+}
+
+.menuBtn:after {
+  -webkit-transform: translate(-10px, 4px);
+          transform: translate(-10px, 4px);
+}
+
+.menuBtn.btn_open {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  background: transparent;
+}
+
+.menuBtn.btn_open:before {
+  -webkit-transform: rotate(-45deg) translate(-13px, -15px);
+          transform: rotate(-45deg) translate(-13px, -15px);
+}
+
+.menuBtn.btn_open:after {
+  -webkit-transform: rotate(45deg) translate(-15px, 13px);
+          transform: rotate(45deg) translate(-15px, 13px);
+}
+
+.link_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon {
+  margin: 0 2px;
+}
+
+.icon:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.heart {
+  background: center/contain no-repeat url(../img/heart.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.inst {
+  background: center/contain no-repeat url(../img/inst.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.shop {
+  background: center/contain no-repeat url(../img/shop.svg);
+  width: 20px;
+  height: 20px;
+}
+
+select {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.content {
+  width: 1410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.content_container {
+  height: 740px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 700px;
+          flex: 1 1 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.info_interval {
+  margin: 320px 0 190px;
+}
+
+.dark_theme {
+  -webkit-transform: rotate(270deg) translate(300px, -250px);
+          transform: rotate(270deg) translate(300px, -250px);
+}
+
+.info_title {
+  font-size: 56px;
+  font-weight: 600;
+  width: 430px;
+  margin: 0;
+}
+
+.info_text {
+  text-align: right;
+}
+
+.text {
+  font-size: 16px;
+  margin: 0;
+}
+
+.container_colors {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 480px;
+  margin: 0 0 0 120px;
+}
+
+.colors_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row_block {
+  width: 130px;
+  height: 60px;
+  margin: 15px;
+}
+
+.darkgrey {
+  background: #898989;
+}
+
+.row_descriprion {
+  position: relative;
+  top: 60px;
+}
+
+.grey {
+  background: #B7B7B7;
+}
+
+.black {
+  background: #000000;
+}
+
+.right_rows {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container_color {
+  font-size: 30px;
+}
+
+.info_width {
+  width: 100%;
+}
+
+.colors_title {
+  font-size: 30px;
+}
+
+.info_colors {
+  width: 315px;
+  position: relative;
+  left: 100px;
+  margin-bottom: 250px;
+}
+
+.colors_text {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cherry {
+  background: #9A0034;
+}
+
+.double {
+  width: 280px;
+  position: relative;
+  right: 295px;
+}
+
+.row_translate {
+  -webkit-transform: rotate(270deg) translate(240px, 130px);
+          transform: rotate(270deg) translate(240px, 130px);
+}
+
+.pink {
+  background: #D7969E;
+}
+
+.lightpink {
+  background: #E8D8D9;
+}
+
+.brightgrey {
+  background: #DEDCDC;
+  margin: 15px 250px 0 15px;
+}
+
+.logo_container {
+  width: 100%;
+  margin: 200px 0 0 0;
+}
+
+.pink_circle {
+  background: radial-gradient(#D7969E 5%, #FFFFFF 60%);
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.brand_large {
+  -webkit-transform: rotate(90deg) translate(225px, -50px);
+          transform: rotate(90deg) translate(225px, -50px);
+  width: 600px;
+  height: 65px;
+  -webkit-filter: invert(82%) sepia(78%) saturate(2208%) hue-rotate(287deg) brightness(87%) contrast(92%);
+          filter: invert(82%) sepia(78%) saturate(2208%) hue-rotate(287deg) brightness(87%) contrast(92%);
+}
+
+.bright_theme {
+  -webkit-transform: rotate(270deg) translate(300px, 195px);
+          transform: rotate(270deg) translate(300px, 195px);
+}
+
+.closeup_text {
+  -webkit-transform: rotate(270deg) translate(-70px, -200px);
+          transform: rotate(270deg) translate(-70px, -200px);
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1440px) {
+  header {
+    min-height: 100px;
+    max-width: 1440px;
+  }
+
+  .cover {
+    max-width: 1440px;
+  }
+
+  .sidebar_menu {
+    width: 730px;
+  }
+
+  .text_shadow {
+    text-shadow: none;
+  }
+
+  .menu_button-container {
+    bottom: 170px;
+  }
+
+  .siderbar_menu_footer {
+    margin: -30px 0px 30px 65px;
+  }
+
+  .content {
+    width: 1170px;
+  }
+
+  .content_container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    width: 530px;
+    margin: 0 20px;
+  }
+
+  .info_text {
+    padding-right: 45px;
+  }
+
+  .double {
+    right: 65px;
+  }
+
+  .container_colors {
+    margin: 0;
+  }
+
+  .brightgrey {
+    margin: 15px 30px 0 15px;
+  }
+
+  .bright_theme {
+    -webkit-transform: rotate(270deg) translate(150px, 295px);
+            transform: rotate(270deg) translate(150px, 295px);
+  }
+
+  .closeup_text {
+    -webkit-transform: rotate(270deg) translate(-70px, -185px);
+            transform: rotate(270deg) translate(-70px, -185px);
+  }
+}
+@media only screen and (min-width: 772px) and (max-width: 960px) {
+  header {
+    min-height: 50px;
+    max-width: 960px;
+  }
+
+  .bonum_logo {
+    height: 15px;
+    width: 60px;
+  }
+
+  .brand_name {
+    height: 13px;
+    width: 100px;
+  }
+
+  .cover {
+    max-width: 960px;
+    max-height: 530px;
+    margin-bottom: 70px;
+  }
+
+  .headline {
+    margin: 0 0 0 70px;
+    max-width: 290px;
+  }
+
+  .headline_title {
+    font-size: 48px;
+  }
+
+  .text_shadow {
+    text-shadow: none;
+  }
+
+  .sidebar_right {
+    max-width: 225px;
+    max-height: 530px;
+  }
+
+  .sidebar_menu {
+    max-width: 450px;
+    max-height: 530px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .content {
+    width: 745px;
+  }
+
+  .siderbar_menu_footer {
+    position: relative;
+    bottom: -119px;
+    left: 50px;
+    max-width: 200px;
+  }
+
+  .menu_button-container {
+    background: transparent;
+  }
+
+  .menu_button-container:hover {
+    background: transparent;
+  }
+
+  .icon:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .content {
+    max-width: 745px;
+  }
+
+  .content_container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    width: 370px;
+  }
+
+  .colors_title {
+    font-size: 24px;
+  }
+
+  .container_colors {
+    margin: 0;
+  }
+
+  .colors_text {
+    font-size: 13px;
+  }
+
+  .info_title {
+    font-size: 36px;
+    width: 270px;
+  }
+
+  .info_text {
+    font-size: 14px;
+  }
+
+  .row_block {
+    width: 80px;
+    height: 50px;
+  }
+
+  .right_rows {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .double {
+    width: 210px;
+    position: relative;
+    right: 70px;
+  }
+
+  .row_translate {
+    -webkit-transform: rotate(270deg) translate(240px, 100px);
+            transform: rotate(270deg) translate(240px, 100px);
+  }
+
+  .brightgrey {
+    margin: 15px;
+  }
+
+  .lightpink {
+    margin: 15px;
+  }
+
+  .bright_theme {
+    -webkit-transform: rotate(270deg) translate(0px, 100px);
+            transform: rotate(270deg) translate(0px, 100px);
+  }
+
+  .logo_container {
+    margin: 0;
+  }
+
+  .brand_large {
+    -webkit-transform: rotate(90deg) translate(225px, -50px);
+            transform: rotate(90deg) translate(225px, -50px);
+    width: 540px;
+    height: 50px;
+    -webkit-filter: invert(82%) sepia(78%) saturate(2208%) hue-rotate(287deg) brightness(87%) contrast(92%);
+            filter: invert(82%) sepia(78%) saturate(2208%) hue-rotate(287deg) brightness(87%) contrast(92%);
+  }
+
+  .info_title {
+    font-size: 48px;
+  }
+
+  .closeup_text {
+    -webkit-transform: rotate(270deg) translate(-50px, -130px);
+            transform: rotate(270deg) translate(-50px, -130px);
+  }
+}
+@media only screen and (min-width: 370px) and (max-width: 768px) {
+  header {
+    min-height: 40px;
+    max-width: 768px;
+    margin: 0 60px;
+  }
+
+  .cover {
+    max-width: 768px;
+    max-height: 455px;
+    margin-bottom: 50px;
+  }
+
+  .cover_img {
+    height: 455px;
+  }
+
+  .headline {
+    margin: 0 0 0 70px;
+    max-width: 270px;
+  }
+
+  .headline_title {
+    font-size: 42px;
+  }
+
+  .text_shadow {
+    text-shadow: none;
+  }
+
+  .sidebar_right {
+    max-width: 175px;
+    max-height: 455px;
+  }
+
+  .sidebar_menu {
+    max-width: 370px;
+    max-height: 455px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .siderbar_menu_footer {
+    position: relative;
+    bottom: -90px;
+    left: 50px;
+    max-width: 170px;
+  }
+
+  .menu_button-container {
+    background: transparent;
+  }
+
+  .menu_button-container:hover {
+    background: transparent;
+  }
+
+  .icon:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .content {
+    max-width: 690px;
+  }
+
+  .content_container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    width: 340px;
+  }
+
+  .colors_title {
+    font-size: 22px;
+  }
+
+  .colors_text {
+    font-size: 12px;
+  }
+
+  .info_title {
+    font-size: 32px;
+    width: 270px;
+  }
+
+  .info_text {
+    font-size: 13px;
+  }
+
+  .container_colors {
+    margin: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    width: 340px;
+  }
+
+  .row_block {
+    width: 70px;
+    height: 50px;
+  }
+
+  .info_colors {
+    width: 268px;
+    margin-bottom: 174px;
+  }
+
+  .double {
+    width: 190px;
+    position: relative;
+    right: 90px;
+  }
+
+  .pink {
+    margin-top: 75px;
+  }
+
+  .row_translate {
+    -webkit-transform: rotate(270deg) translate(200px, 85px);
+            transform: rotate(270deg) translate(200px, 85px);
+  }
+
+  .row_descriprion {
+    top: 45px;
+  }
+
+  .brightgrey {
+    margin: 15px 50px 15px 15px;
+  }
+
+  .dark_theme {
+    -webkit-transform: rotate(270deg) translate(310px, -160px);
+            transform: rotate(270deg) translate(310px, -160px);
+  }
+
+  .bright_theme {
+    -webkit-transform: rotate(270deg) translate(0px, 185px);
+            transform: rotate(270deg) translate(0px, 185px);
+  }
+
+  .closeup_text {
+    -webkit-transform: rotate(270deg) translate(-50px, -125px);
+            transform: rotate(270deg) translate(-50px, -125px);
+  }
+
+  .closeup_text_tablet {
+    font-size: 42px;
+    font-weight: 600;
+  }
+
+  .brand_large {
+    -webkit-transform: rotate(90deg) translate(205px, -200px);
+            transform: rotate(90deg) translate(205px, -200px);
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 360px) {
+  header {
+    min-height: 20px;
+    max-width: 360px;
+  }
+
+  .brand_name {
+    display: none;
+  }
+
+  .bonum_logo {
+    position: relative;
+    left: 160px;
+    top: 30px;
+    width: 45px;
+    height: 14px;
+  }
+
+  .cover {
+    max-width: 360px;
+    max-height: 460px;
+    margin-bottom: 50px;
+  }
+
+  .cover_img {
+    height: 455px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .headline {
+    display: none;
+  }
+
+  .sidebar_right {
+    max-width: 70px;
+    max-height: 455px;
+  }
+
+  .sidebar_menu {
+    max-width: 165px;
+    max-height: 455px;
+  }
+
+  .menu_button-container {
+    bottom: 55px;
+    left: 10px;
+  }
+
+  .siderbar_menu_footer {
+    position: relative;
+  }
+
+  .siderbar_menu_footer {
+    position: relative;
+    top: 90%;
+    left: 10%;
+    margin: 0;
+    width: 100px;
+  }
+
+  .menu_button-container {
+    background: transparent;
+    right: 50px;
+  }
+
+  .menu_button-container:hover {
+    background: transparent;
+  }
+
+  .icon:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .content {
+    width: 330px;
+  }
+
+  .content_container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    width: 330px;
+    height: auto;
+  }
+
+  .info_interval {
+    margin: 0;
+  }
+
+  .info_title {
+    font-size: 32px;
+    width: 270px;
+  }
+
+  .text_shadow {
+    text-shadow: none;
+  }
+
+  .row_block {
+    width: 70px;
+    height: 50px;
+  }
+
+  .right_rows {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .container_colors {
+    width: 330px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .dark_theme {
+    -webkit-transform: rotate(270deg) translate(130px, -160px);
+            transform: rotate(270deg) translate(130px, -160px);
+  }
+
+  .colors_title {
+    font-size: 22px;
+  }
+
+  .info_colors {
+    width: 250px;
+    margin-bottom: 50px;
+    left: 0;
+  }
+
+  .row_translate {
+    -webkit-transform: rotate(270deg) translate(145px, 60px);
+            transform: rotate(270deg) translate(145px, 60px);
+  }
+
+  .double {
+    width: 130px;
+    position: relative;
+    right: 85%;
+  }
+
+  .brightgrey {
+    margin: 15px;
+  }
+
+  .pink_circle {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    right: 100px;
+    opacity: 0.1;
+  }
+
+  .bright_theme {
+    -webkit-transform: rotate(270deg) translate(280px, 160px);
+            transform: rotate(270deg) translate(280px, 160px);
+  }
+
+  .bonum_phone_creen {
+    left: 10px;
+    width: 65px;
+    height: 20px;
+  }
+
+  .logo_container {
+    margin: 0;
+  }
+
+  .brand_large {
+    display: block;
+    -webkit-transform: rotate(90deg) translate(140px, -25px);
+            transform: rotate(90deg) translate(140px, -25px);
+    width: 200px;
+    height: 40px;
+  }
+
+  .closeup_text_tablet {
+    font-size: 42px;
+    width: 220px;
+    -webkit-transform: translate(60px, -250px);
+            transform: translate(60px, -250px);
+  }
+
+  .closeup_text {
+    -webkit-transform: rotate(270deg) translate(185px, -40px);
+            transform: rotate(270deg) translate(185px, -40px);
+  }
+}
